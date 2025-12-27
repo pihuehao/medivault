@@ -1,0 +1,129 @@
+.record-submit {
+  background: linear-gradient(135deg, #1a1f2e 0%, #252b3d 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(79, 209, 197, 0.2);
+}
+
+.record-submit.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.record-submit h2 {
+  color: #4fd1c5;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.record-submit .description {
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.record-submit form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.metric-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-input label {
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.metric-input input {
+  background: rgba(26, 32, 44, 0.8);
+  border: 1px solid rgba(79, 209, 197, 0.3);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.metric-input input:focus {
+  outline: none;
+  border-color: #4fd1c5;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.1);
+}
+
+.metric-input input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.metric-input .hint {
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+.record-submit button {
+  background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
+  color: #1a202c;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.record-submit button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 209, 197, 0.3);
+}
+
+.record-submit button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.status.success {
+  background: rgba(72, 187, 120, 0.2);
+  border: 1px solid rgba(72, 187, 120, 0.5);
+  color: #48bb78;
+}
+
+.status.error {
+  background: rgba(245, 101, 101, 0.2);
+  border: 1px solid rgba(245, 101, 101, 0.5);
+  color: #f56565;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(79, 209, 197, 0.2);
+  border-top-color: #4fd1c5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

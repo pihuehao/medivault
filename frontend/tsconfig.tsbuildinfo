@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/permissions/accesscontrol.tsx","./src/components/records/recordsubmit.tsx","./src/config/contracts.ts","./src/config/wagmi.ts","./src/hooks/usefheinstance.ts","./src/types/index.ts"],"version":"5.8.3"}
